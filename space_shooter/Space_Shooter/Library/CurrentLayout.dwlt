@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 32
+  controlID: 92
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
     y: 0
     width: 1522
     height: 841
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -274,7 +274,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs/VFX/Explosions
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders:
@@ -287,7 +287,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f6080000
     m_LastClickedID: 2294
-    m_ExpandedIDs: 000000000009000026090000b40a0000b20b00002c0c0000
+    m_ExpandedIDs: 0000000002090000280900007a0a0000b60a0000b40b00002e0c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -312,21 +312,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 28}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000009000026090000780a0000b40a0000b20b00002c0c0000
+    m_ExpandedIDs: 000000000209000028090000dc0900007a0a0000b40b00002e0c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameController
-      m_OriginalName: GameController
+      m_Name: DestroyByTime
+      m_OriginalName: DestroyByTime
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11790
+      m_UserData: 12204
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -431,8 +431,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bef2ffff
-    m_LastClickedID: -3394
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: f0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.21119411, y: -0.20070997, z: 0.044275545, w: -0.95561856}
     speed: 2
-    m_Value: {x: -0.21118835, y: -0.20070449, z: 0.044274338, w: -0.95559245}
+    m_Value: {x: -0.21119413, y: -0.20070998, z: 0.04427555, w: -0.9556186}
   m_Size:
     m_Target: 10.471274
     speed: 2
