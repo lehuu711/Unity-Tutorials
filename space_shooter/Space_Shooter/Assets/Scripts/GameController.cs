@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -36,7 +37,7 @@ public class GameController : MonoBehaviour {
 	void Update() {
 		if (restart) {
 			if (Input.GetKeyDown(KeyCode.R)) {
-				Application.LoadLevel(Application.loadedLevel);
+				SceneManager.LoadScene("Main");
 			}
 		}
 	}
