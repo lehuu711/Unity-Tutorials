@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
-	public GameObject hazard;
+	public GameObject[] hazards;
 	public Vector3 spawnVals;
 	public int hazardCount;
 
@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour {
 		yield return new WaitForSeconds(startWait);
 		while(true) {
 			for (int i=0; i < hazardCount; i++) {
+				GameObject hazard = hazards[Random.Range(0,hazards.Length)];
 				Vector3 spawnPos = new Vector3(Random.Range(-spawnVals.x, spawnVals.x),
 																			 spawnVals.y,
 																			 spawnVals.z);
