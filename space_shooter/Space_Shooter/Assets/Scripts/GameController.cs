@@ -14,11 +14,11 @@ public class GameController : MonoBehaviour {
 	public float startWait;
 	public float waveWait;
 
-	public int score;
 	public Text scoreText;
 	public Text restartText;
 	public Text gameOverText;
 
+	private int score;
 	private bool gameOver;
 	private bool restart;
 
