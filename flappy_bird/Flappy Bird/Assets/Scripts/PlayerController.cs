@@ -19,12 +19,10 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		// Hop if not yet and left-click triggered
-		if (!isDead) {
-			if (Input.GetMouseButtonDown(0)) {
-				// Resets velocity and hops up
-				rb.velocity = new Vector2(0,upForce);
-				anim.SetTrigger("Flap");
-			}
+		if (!isDead && Input.GetMouseButtonDown(0)) {
+			// Resets velocity and hops up
+			rb.velocity = new Vector2(0,upForce);
+			anim.SetTrigger("Flap");
 		}
 	}
 
@@ -32,5 +30,6 @@ public class PlayerController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		isDead = true;
 		anim.SetTrigger("Die");
+		GameController.instance.GameOver();
 	}
 }
