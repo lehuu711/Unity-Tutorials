@@ -28,8 +28,9 @@ public class PlayerController : MonoBehaviour {
 
 	// Player dies if they collide into anything
 	void OnCollisionEnter2D(Collision2D col) {
-		isDead = true;
 		anim.SetTrigger("Die");
+		rb.velocity = Vector2.zero;
+		isDead = true;
 		GameController.instance.GameOver();
 	}
 }

@@ -8,19 +8,17 @@ public class GameController : MonoBehaviour {
 	public static GameController instance;
 
 	public GameObject gameOverText;
+	public float scrollSpeed;
 	public bool gameOver;
 
 	void Awake() {
 		if (instance == null) {
 			instance = this;
-		}
-		else {
+			scrollSpeed = -1.5f;
+			gameOver = false;
+		} else {
 			Destroy(gameObject);
 		}
-	}
-
-	void Start() {
-		gameOver = false;
 	}
 
 	void Update () {
