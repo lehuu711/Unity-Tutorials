@@ -7,11 +7,13 @@ public class BGScroller : MonoBehaviour {
 	public float tileSize;
 
 	private Vector2 startPosition;
+	private float startTime;
 
 
 	// Use this for initialization
 	void Start () {
-		startPosition = transform.position;
+		startPosition = Vector2.zero;
+		startTime = Time.time;
 	}
 
 
@@ -20,7 +22,7 @@ public class BGScroller : MonoBehaviour {
 		if (GameController.instance.gameOver) {
 			// Do nothing
 		} else {
-			float newPosition = Mathf.Repeat(Time.time *
+			float newPosition = Mathf.Repeat((Time.time-startTime) *
 																			 GameController.instance.scrollSpeed,
 																			 tileSize);
 			transform.position = startPosition + Vector2.left * newPosition;
