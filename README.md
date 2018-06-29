@@ -5,7 +5,7 @@ The Unity editor is available for download at their website https://store.unity.
 
 ## Running the projects
 Fork this repository to get a copy of the files.
-Each project can be opened by opening Unity and selecting the "Open" option and selecting the parent folder for each project.
+Each project can be opened by opening Unity, selecting the "Open" option, and selecting the parent folder for each project.
 One or more completed versions of each project tutorial can be found under the "Builds" folder for each respective project.
 
 ## Tutorial Links
