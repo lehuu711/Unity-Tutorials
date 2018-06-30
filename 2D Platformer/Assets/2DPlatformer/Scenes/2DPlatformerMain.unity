@@ -129,7 +129,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb373bd206ccf7b4c85860d44f9edec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityMod: 3
+  minGroundNormY: 0.65
+  gravityMod: 1
+--- !u!114 &501340265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 501340263}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffa37f31c5111e46b751f867d07bc59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minGroundNormY: 0.65
+  gravityMod: 1
 --- !u!1001 &1153934357
 Prefab:
   m_ObjectHideFlags: 0
@@ -2602,6 +2616,11 @@ Prefab:
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212811306945918256, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
