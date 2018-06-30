@@ -113,37 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &501340263 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee,
-    type: 2}
-  m_PrefabInternal: {fileID: 1510342581}
---- !u!114 &501340264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501340263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb373bd206ccf7b4c85860d44f9edec0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minGroundNormY: 0.65
-  gravityMod: 1
---- !u!114 &501340265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501340263}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ffa37f31c5111e46b751f867d07bc59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minGroundNormY: 0.65
-  gravityMod: 1
 --- !u!1001 &639477556
 Prefab:
   m_ObjectHideFlags: 0
@@ -183,6 +152,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 212991655389708426, guid: e7fcecc826687024e9b52ec763b14088,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
   m_IsPrefabParent: 0
@@ -203,9 +177,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormY: 0.65
-  gravityMod: 1.5
-  maxSpeed: 5
+  gravityMod: 1
+  maxSpeed: 7
   jumpTakeOff: 7
+--- !u!212 &1074206580 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212991655389708426, guid: e7fcecc826687024e9b52ec763b14088,
+    type: 2}
+  m_PrefabInternal: {fileID: 639477556}
 --- !u!1001 &1153934357
 Prefab:
   m_ObjectHideFlags: 0
@@ -2834,7 +2813,7 @@ Prefab:
         type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1074206580}
     - target: {fileID: 114123390247084860, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
       propertyPath: limits.Array.data[0].x
@@ -2878,7 +2857,7 @@ Prefab:
     - target: {fileID: 114123390247084860, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f387d2a5577afa47b4f87e4e846f091, type: 2}
